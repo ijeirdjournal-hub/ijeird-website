@@ -24,13 +24,14 @@ GENERAL
 }
 
 body{
-    background:#f4fff6;
+    background:#f6f9f7;
     color:#222;
-    line-height:1.6;
+    line-height:1.5;
+    font-size:14px;
 }
 
 .container{
-    width:90%;
+    width:92%;
     margin:auto;
 }
 
@@ -41,8 +42,8 @@ TOP HEADER
 .top-header{
     background:#0b7a3d;
     color:white;
-    padding:12px 0;
-    font-size:14px;
+    padding:10px 0;
+    font-size:13px;
 }
 
 .top-flex{
@@ -57,36 +58,38 @@ HEADER
 
 .main-header{
     background:white;
-    padding:25px 0;
+    padding:18px 0;
+    border-bottom:1px solid #e5e5e5;
 }
 
 .logo-section{
     display:flex;
     align-items:center;
-    gap:20px;
+    gap:16px;
 }
 
 .logo-box{
-    width:70px;
-    height:70px;
+    width:60px;
+    height:60px;
     border-radius:50%;
     background:#0b7a3d;
     display:flex;
     align-items:center;
     justify-content:center;
     color:white;
-    font-size:28px;
+    font-size:24px;
     font-weight:bold;
 }
 
 .journal-title h1{
     color:#0b7a3d;
-    font-size:32px;
+    font-size:28px;
 }
 
 .journal-title p{
     color:#666;
-    margin-top:5px;
+    margin-top:4px;
+    font-size:13px;
 }
 
 /* =========================
@@ -95,7 +98,7 @@ NAVIGATION
 
 nav{
     background:white;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    box-shadow:0 2px 8px rgba(0,0,0,0.06);
     position:sticky;
     top:0;
     z-index:1000;
@@ -114,10 +117,11 @@ nav{
 
 .menu li a{
     display:block;
-    padding:18px 16px;
+    padding:14px 14px;
     color:#0b7a3d;
     text-decoration:none;
-    font-weight:bold;
+    font-weight:600;
+    font-size:13px;
     transition:0.3s;
 }
 
@@ -136,7 +140,7 @@ DROPDOWN
     top:100%;
     left:0;
     background:white;
-    min-width:280px;
+    min-width:260px;
     box-shadow:0 4px 12px rgba(0,0,0,0.12);
     border-top:3px solid #0b7a3d;
     z-index:999;
@@ -147,9 +151,9 @@ DROPDOWN
 }
 
 .submenu li a{
-    padding:12px 18px;
+    padding:11px 16px;
     color:#222;
-    font-size:14px;
+    font-size:13px;
     border-bottom:1px solid #f0f0f0;
 }
 
@@ -168,40 +172,42 @@ HERO SECTION
 
 .hero{
     background:
-    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
     url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
 
     background-size:cover;
     background-position:center;
     color:white;
     text-align:center;
-    padding:120px 20px;
+    padding:80px 20px;
 }
 
 .hero h1{
-    font-size:48px;
-    margin-bottom:20px;
+    font-size:34px;
+    margin-bottom:15px;
+    line-height:1.3;
 }
 
 .hero p{
-    max-width:900px;
+    max-width:850px;
     margin:auto;
-    font-size:18px;
+    font-size:15px;
 }
 
 .hero-buttons{
-    margin-top:35px;
+    margin-top:25px;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 28px;
+    padding:11px 22px;
     background:#0b7a3d;
     color:white;
     text-decoration:none;
     border-radius:5px;
-    margin:10px;
+    margin:8px;
     transition:0.3s;
+    font-size:14px;
 }
 
 .btn:hover{
@@ -219,44 +225,10 @@ MAIN CONTENT
 
 .main-content{
     display:grid;
-    grid-template-columns:1fr 2fr 1fr;
-    gap:25px;
-    padding:60px 0;
-}
-
-/* =========================
-SIDEBAR
-========================= */
-
-.sidebar{
-    background:white;
-    padding:25px;
-    border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,0.08);
-}
-
-.sidebar h3{
-    color:#0b7a3d;
-    margin-bottom:20px;
-    border-bottom:2px solid #0b7a3d;
-    padding-bottom:10px;
-}
-
-.sidebar ul{
-    list-style:none;
-}
-
-.sidebar ul li{
-    margin-bottom:12px;
-}
-
-.sidebar ul li a{
-    text-decoration:none;
-    color:#333;
-}
-
-.sidebar ul li a:hover{
-    color:#0b7a3d;
+    grid-template-columns:2.2fr 1fr;
+    gap:22px;
+    padding:40px 0;
+    align-items:start;
 }
 
 /* =========================
@@ -265,14 +237,61 @@ CONTENT
 
 .content{
     background:white;
-    padding:35px;
+    padding:28px;
     border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,0.08);
+    box-shadow:0 0 10px rgba(0,0,0,0.06);
 }
 
 .content h2{
     color:#0b7a3d;
+    margin-bottom:14px;
+    font-size:22px;
+}
+
+.content p{
+    margin-bottom:14px;
+    text-align:justify;
+    font-size:14px;
+}
+
+/* =========================
+SIDEBAR
+========================= */
+
+.sidebar{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.06);
     margin-bottom:20px;
+}
+
+.sidebar h3{
+    color:#0b7a3d;
+    margin-bottom:15px;
+    border-bottom:2px solid #0b7a3d;
+    padding-bottom:8px;
+    font-size:18px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin-bottom:10px;
+}
+
+.sidebar ul li a{
+    text-decoration:none;
+    color:#333;
+    font-size:13px;
+    transition:0.3s;
+}
+
+.sidebar ul li a:hover{
+    color:#0b7a3d;
+    padding-left:4px;
 }
 
 /* =========================
@@ -281,22 +300,38 @@ CARDS
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    margin-top:30px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-top:25px;
 }
 
 .card{
     background:white;
-    padding:25px;
+    padding:18px;
     border-radius:8px;
-    border-top:5px solid #0b7a3d;
-    box-shadow:0 0 10px rgba(0,0,0,0.08);
+    border-top:4px solid #0b7a3d;
+    box-shadow:0 0 8px rgba(0,0,0,0.06);
 }
 
 .card h3{
     color:#0b7a3d;
-    margin-bottom:15px;
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+.card p{
+    font-size:13px;
+}
+
+/* =========================
+SUBJECT LIST
+========================= */
+
+.subject-list{
+    margin-top:20px;
+    padding-left:20px;
+    line-height:1.9;
+    font-size:14px;
 }
 
 /* =========================
@@ -307,8 +342,9 @@ footer{
     background:#0b7a3d;
     color:white;
     text-align:center;
-    padding:35px 10px;
-    margin-top:50px;
+    padding:25px 10px;
+    margin-top:40px;
+    font-size:13px;
 }
 
 /* =========================
@@ -335,12 +371,16 @@ RESPONSIVE
 }
 
 .hero h1{
-    font-size:34px;
+    font-size:28px;
 }
 
 .top-flex{
     flex-direction:column;
-    gap:8px;
+    gap:6px;
+}
+
+.journal-title h1{
+    font-size:22px;
 }
 
 }
@@ -403,11 +443,7 @@ International Journal of Engineering Innovation, Research and Development
 
 <ul class="menu">
 
-<li>
-<a href="index.html">Home</a>
-</li>
-
-<!-- ABOUT -->
+<li><a href="index.html">Home</a></li>
 
 <li class="dropdown">
 
@@ -416,162 +452,26 @@ International Journal of Engineering Innovation, Research and Development
 <ul class="submenu">
 
 <li><a href="about.html">About the Journal</a></li>
-
 <li><a href="call-for-paper.html">Call for Paper</a></li>
-
 <li><a href="author-guidelines.html">Author Guidelines</a></li>
-
 <li><a href="publication-ethics.html">Publication Ethics</a></li>
-
 <li><a href="privacy-policy.html">Privacy Statement</a></li>
-
 <li><a href="copyright.html">Copyright & Licensing</a></li>
-
 <li><a href="contact.html">Contact</a></li>
 
 </ul>
 
 </li>
 
-<!-- JOURNAL POLICY -->
+<li><a href="indexing.html">Indexing</a></li>
 
-<li class="dropdown">
+<li><a href="apc.html">APC</a></li>
 
-<a href="#">Journal Policy</a>
-
-<ul class="submenu">
-
-<li><a href="review-policy.html">Review Policy</a></li>
-
-<li><a href="open-access-policy.html">Open Access Policy</a></li>
-
-<li><a href="archiving-policy.html">Archiving Policy</a></li>
-
-<li><a href="advertising-policy.html">Advertising Policy</a></li>
-
-<li><a href="refund-policy.html">Refund Policy</a></li>
-
-<li><a href="waiver-policy.html">Waiver Policy</a></li>
-
-<li><a href="retraction-policy.html">Retraction & Withdrawal Policy</a></li>
-
-</ul>
-
-</li>
-
-<!-- APA REFERENCING -->
-
-<li class="dropdown">
-
-<a href="#">APA Referencing</a>
-
-<ul class="submenu">
-
-<li><a href="apa-guide.html">APA Reference Guide</a></li>
-
-<li><a href="apa-format.html">APA Reference Format</a></li>
-
-</ul>
-
-</li>
-
-<!-- EDITORIAL TEAM -->
-
-<li class="dropdown">
-
-<a href="#">Editorial Team</a>
-
-<ul class="submenu">
-
-<li><a href="editorial-team.html">Editorial Team</a></li>
-
-<li><a href="join-editorial.html">Join the Editorial Team</a></li>
-
-</ul>
-
-</li>
-
-<!-- SUBMISSIONS -->
-
-<li class="dropdown">
-
-<a href="#">Submissions</a>
-
-<ul class="submenu">
-
-<li><a href="submission.html">Submissions</a></li>
-
-<li><a href="submission-guidelines.html">Submission Guidelines</a></li>
-
-<li><a href="manuscript-template.html">Manuscript Template</a></li>
-
-</ul>
-
-</li>
-
-<!-- ISSUES -->
-
-<li class="dropdown">
-
-<a href="#">Issues</a>
-
-<ul class="submenu">
-
-<li><a href="current-issue.html">Current</a></li>
+<li><a href="submission.html">Submission</a></li>
 
 <li><a href="archives.html">Archives</a></li>
 
-</ul>
-
-</li>
-
-<!-- INDEXING -->
-
-<li>
-<a href="indexing.html">Indexing</a>
-</li>
-
-<!-- APC -->
-
-<li>
-<a href="apc.html">APC</a>
-</li>
-
-<!-- OJS PORTAL -->
-
-<li class="dropdown">
-
-<a href="#">OJS Portal</a>
-
-<ul class="submenu">
-
-<li>
-<a href="https://www.ijeird.org/ojs">
-Submit Manuscript
-</a>
-</li>
-
-<li>
-<a href="https://www.ijeird.org/ojs/index.php/index/login">
-Author Login
-</a>
-</li>
-
-<li>
-<a href="https://www.ijeird.org/ojs/index.php/index/login">
-Reviewer Login
-</a>
-</li>
-
-<li>
-<a href="https://www.ijeird.org/ojs/index.php/index/login">
-Editor Login
-</a>
-</li>
-
-</ul>
-
-</li>
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -609,7 +509,132 @@ Author Login
 
 <div class="main-content">
 
-<!-- LEFT SIDEBAR -->
+<!-- MAIN CONTENT -->
+
+<div class="content">
+
+<h2>
+About the Journal
+</h2>
+
+<p>
+The International Journal of Engineering Innovation, Research and Development (IJEIRD) is an international Open Access and Double-Blind Peer-Reviewed journal dedicated to publishing high-quality research in engineering, technology, and interdisciplinary scientific studies.
+</p>
+
+<p>
+The journal provides a global platform for researchers, academicians, scientists, scholars, and industry professionals to share innovative ideas, advanced technologies, experimental findings, and research developments that contribute to scientific and industrial progress.
+</p>
+
+<p>
+IJEIRD publishes original research papers, review articles, technical reports, case studies, and scholarly communications from various branches of engineering and applied sciences.
+</p>
+
+<p>
+The journal encourages interdisciplinary collaboration and technological advancement that addresses industrial, environmental, and societal challenges through innovative research and scientific excellence.
+</p>
+
+<h2 style="margin-top:35px;">
+Aim and Scope
+</h2>
+
+<p>
+The journal aims to provide a high-quality international platform for researchers, engineers, academicians, and industry professionals to publish innovative and original research in engineering, technology, and interdisciplinary sciences.
+</p>
+
+<p>
+IJEIRD encourages the dissemination of emerging research findings, novel methodologies, analytical models, and engineering solutions that support scientific and industrial advancement.
+</p>
+
+<!-- CARDS -->
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+Computer Science & AI
+</h3>
+
+<p>
+Artificial Intelligence, Machine Learning, Cyber Security, Data Science, and Information Technology.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Core Engineering
+</h3>
+
+<p>
+Mechanical, Civil, Electrical, Electronics, and Industrial Engineering research areas.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Emerging Technologies
+</h3>
+
+<p>
+Robotics, Automation, Renewable Energy, Smart Systems, and Green Technology.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Interdisciplinary Research
+</h3>
+
+<p>
+Biotechnology, Nanotechnology, Materials Science, and multidisciplinary engineering studies.
+</p>
+
+</div>
+
+</div>
+
+<!-- SUBJECT AREAS -->
+
+<h2 style="margin-top:40px;">
+Major Subject Areas
+</h2>
+
+<ul class="subject-list">
+
+<li>Computer Science Engineering</li>
+<li>Artificial Intelligence & Machine Learning</li>
+<li>Data Science & Big Data Analytics</li>
+<li>Information Technology</li>
+<li>Mechanical Engineering</li>
+<li>Civil Engineering</li>
+<li>Electrical & Electronics Engineering</li>
+<li>Electronics & Communication Engineering</li>
+<li>Robotics & Automation</li>
+<li>Internet of Things (IoT)</li>
+<li>Cyber Security</li>
+<li>Renewable Energy & Environmental Engineering</li>
+<li>Industrial Engineering</li>
+<li>Biotechnology</li>
+<li>Green Technology & Sustainability</li>
+<li>Materials Science & Nanotechnology</li>
+
+</ul>
+
+<p style="margin-top:20px;">
+All published articles are freely accessible worldwide under the Open Access publication model.
+</p>
+
+</div>
+
+<!-- RIGHT SIDEBAR -->
+
+<div>
 
 <div class="sidebar">
 
@@ -633,190 +658,11 @@ Quick Links
 
 <li><a href="waiver-policy.html">Waiver Policy</a></li>
 
-</ul>
-
-</div>
-
-<!-- MAIN CONTENT -->
-
-<div class="content">
-
-<h2>
-About the Journal
-</h2>
-
-<p>
-The International Journal of Engineering Innovation, Research and Development (IJEIRD) is an international, Open Access, Double-Blind Peer-Reviewed journal dedicated to publishing high-quality research in the field of engineering, technology, and interdisciplinary scientific studies. The journal provides a global platform for researchers, academicians, scientists, scholars, and industry professionals to share innovative ideas, advanced technologies, experimental findings, and research developments that contribute to scientific and industrial progress.
-</p>
-
-<p>
-IJEIRD aims to encourage research and innovation by publishing original research papers, review articles, technical reports, case studies, and scholarly communications from various branches of engineering and applied sciences. The journal focuses on promoting interdisciplinary collaboration and technological advancement that can address current industrial, environmental, and societal challenges.
-</p>
-
-<p>
-The journal covers a wide range of engineering and technological disciplines including Computer Science Engineering, Artificial Intelligence, Data Science, Mechanical Engineering, Civil Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, Information Technology, Robotics, Automation, Renewable Energy, Biotechnology, Environmental Engineering, Industrial Engineering, and other emerging research areas.
-</p>
-
-<p>
-All manuscripts submitted to IJEIRD undergo a rigorous Double-Blind Peer-Review process to ensure originality, technical quality, academic integrity, and research significance. The journal maintains high ethical and editorial standards and is committed to publishing reliable and impactful research that contributes to the advancement of knowledge and innovation.
-</p>
-
-<p>
-As an Open Access journal, IJEIRD provides unrestricted access to published articles, enabling researchers and readers worldwide to freely access, read, download, and share scholarly content for educational and research purposes. The journal believes in the widespread dissemination of scientific knowledge for the benefit of the global academic and research community.
-</p>
-
-<p>
-The journal is published on a Biannual basis, releasing two issues every year. IJEIRD emphasizes timely publication, transparent review procedures, and professional editorial practices to support researchers in disseminating their work efficiently and effectively.
-</p>
-
-<p>
-Through its commitment to research excellence, innovation, and ethical publication practices, the International Journal of Engineering Innovation, Research and Development (IJEIRD) strives to become a recognized and respected platform for engineering and technological research at the international level.
-</p>
-
-<!-- AIM & SCOPE -->
-
-<h2 style="margin-top:50px;">
-Aim and Scope
-</h2>
-
-<p>
-The journal aims to provide a high-quality international platform for researchers, academicians, scientists, engineers, and industry professionals to publish innovative and original research in the field of engineering, technology, and interdisciplinary sciences. The journal is dedicated to promoting advanced research, technological innovation, scientific development, and practical applications that contribute to academic growth and industrial advancement.
-</p>
-
-<p>
-The primary aim of IJEIRD is to encourage the dissemination of emerging research findings, novel methodologies, experimental studies, analytical models, and innovative engineering solutions that address real-world challenges and support sustainable technological development. The journal seeks to bridge the gap between academic research and industrial applications by publishing impactful research with practical significance.
-</p>
-
-<p>
-IJEIRD welcomes original research articles, review papers, technical notes, case studies, short communications, and interdisciplinary studies from various domains of engineering and applied sciences. The journal encourages contributions that demonstrate innovation, scientific excellence, technical advancement, and future research potential.
-</p>
-
-<h2 style="margin-top:45px;">
-Scope of the Journal
-</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Computer Science & AI</h3>
-<p>
-Computer Science Engineering, Artificial Intelligence, Machine Learning, Cyber Security, IoT, and Data Science.
-</p>
-</div>
-
-<div class="card">
-<h3>Core Engineering</h3>
-<p>
-Mechanical Engineering, Civil Engineering, Electrical & Electronics Engineering, and Industrial Engineering.
-</p>
-</div>
-
-<div class="card">
-<h3>Emerging Technologies</h3>
-<p>
-Robotics, Automation, Smart Technologies, Green Technology, Renewable Energy, and Sustainability.
-</p>
-</div>
-
-<div class="card">
-<h3>Interdisciplinary Research</h3>
-<p>
-Biotechnology, Materials Science, Nanotechnology, and collaborative interdisciplinary engineering studies.
-</p>
-</div>
-
-</div>
-
-<!-- SUBJECT AREAS -->
-
-<h2 style="margin-top:50px;">
-Major Subject Areas
-</h2>
-
-<ul style="margin-top:20px; padding-left:25px; line-height:2;">
-
-<li>Computer Science Engineering</li>
-
-<li>Artificial Intelligence & Machine Learning</li>
-
-<li>Data Science & Big Data Analytics</li>
-
-<li>Information Technology</li>
-
-<li>Mechanical Engineering</li>
-
-<li>Civil Engineering</li>
-
-<li>Electrical & Electronics Engineering</li>
-
-<li>Electronics & Communication Engineering</li>
-
-<li>Robotics & Automation</li>
-
-<li>Internet of Things (IoT)</li>
-
-<li>Cyber Security</li>
-
-<li>Renewable Energy & Environmental Engineering</li>
-
-<li>Industrial Engineering</li>
-
-<li>Biotechnology</li>
-
-<li>Smart Technologies & Innovation</li>
-
-<li>Interdisciplinary Engineering Research</li>
-
-<li>Green Technology & Sustainability</li>
-
-<li>Materials Science & Nanotechnology</li>
-
-<li>Industrial & Production Engineering</li>
+<li><a href="archives.html">Archives</a></li>
 
 </ul>
 
-<p style="margin-top:30px;">
-IJEIRD also encourages multidisciplinary and collaborative research that integrates engineering concepts with emerging scientific and technological innovations.
-</p>
-
-<p>
-The journal is committed to maintaining high academic and ethical standards through a rigorous Double-Blind Peer-Review process and aims to promote global knowledge exchange by providing Open Access to published research for readers and researchers worldwide.
-</p>
-<p>
-All published articles are freely accessible worldwide.
-</p>
-
 </div>
-
-<div class="card">
-
-<h3>
-Peer Review
-</h3>
-
-<p>
-Rigorous Double-Blind Peer Review process.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>
-Biannual Publication
-</h3>
-
-<p>
-Two issues are published annually.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- RIGHT SIDEBAR -->
 
 <div class="sidebar">
 
@@ -840,7 +686,9 @@ Journal Information
 
 </ul>
 
-<br>
+</div>
+
+<div class="sidebar">
 
 <h3>
 Indexing
@@ -857,6 +705,32 @@ Indexing
 <li>ROAD</li>
 
 </ul>
+
+</div>
+
+<div class="sidebar">
+
+<h3>
+Publication Features
+</h3>
+
+<ul>
+
+<li>Fast Review Process</li>
+
+<li>Open Access Publishing</li>
+
+<li>International Editorial Board</li>
+
+<li>Online Submission System</li>
+
+<li>DOI for Published Articles</li>
+
+<li>Plagiarism Screening</li>
+
+</ul>
+
+</div>
 
 </div>
 
@@ -881,4 +755,5 @@ Powered by Open Journal Systems (OJS)
 </footer>
 
 </body>
+
 </html>
