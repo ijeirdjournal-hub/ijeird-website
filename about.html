@@ -1,0 +1,477 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+About the Journal | IJEIRD
+</title>
+
+<style>
+
+/* =========================
+GENERAL
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+    color:#222;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+/* =========================
+TOP HEADER
+========================= */
+
+.top-header{
+    background:#0b4f8a;
+    color:white;
+    padding:12px 0;
+    font-size:14px;
+}
+
+.top-flex{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+/* =========================
+HEADER
+========================= */
+
+.main-header{
+    background:white;
+    padding:25px 0;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo-box{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#0b4f8a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.journal-title h1{
+    color:#0b4f8a;
+    font-size:32px;
+}
+
+.journal-title p{
+    color:#666;
+    margin-top:5px;
+}
+
+/* =========================
+NAVIGATION
+========================= */
+
+nav{
+    background:white;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.menu li{
+    position:relative;
+}
+
+.menu li a{
+    display:block;
+    padding:18px 20px;
+    color:#0b4f8a;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.menu li a:hover{
+    background:#eef5fb;
+    color:#083b66;
+}
+
+/* =========================
+DROPDOWN
+========================= */
+
+.submenu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:white;
+    min-width:260px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
+    border-top:3px solid #0b4f8a;
+    z-index:999;
+}
+
+.submenu li{
+    width:100%;
+}
+
+.submenu li a{
+    padding:12px 18px;
+    color:#222;
+    font-size:14px;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.submenu li a:hover{
+    background:#eef5fb;
+    color:#0b4f8a;
+}
+
+.dropdown:hover .submenu{
+    display:block;
+}
+
+/* =========================
+PAGE HEADER
+========================= */
+
+.page-banner{
+    background:
+    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.page-banner h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.page-banner p{
+    font-size:18px;
+}
+
+/* =========================
+CONTENT
+========================= */
+
+.main-content{
+    padding:60px 0;
+}
+
+.content-box{
+    background:white;
+    padding:40px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.08);
+}
+
+.content-box h2{
+    color:#0b4f8a;
+    margin-bottom:20px;
+}
+
+.content-box p{
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+/* =========================
+CARDS
+========================= */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:#ffffff;
+    padding:25px;
+    border-radius:8px;
+    border-top:5px solid #0b4f8a;
+    box-shadow:0 0 10px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#0b4f8a;
+    margin-bottom:15px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#0b4f8a;
+    color:white;
+    text-align:center;
+    padding:35px 10px;
+    margin-top:50px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.menu{
+    flex-direction:column;
+}
+
+.submenu{
+    position:relative;
+    width:100%;
+}
+
+.page-banner h1{
+    font-size:32px;
+}
+
+.top-flex{
+    flex-direction:column;
+    gap:8px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- TOP HEADER -->
+
+<div class="top-header">
+
+<div class="container top-flex">
+
+<div>
+Open Access | Double-Blind Peer-Reviewed | Biannual Journal
+</div>
+
+<div>
+Email: editorial@ijeird.org
+</div>
+
+</div>
+
+</div>
+
+<!-- HEADER -->
+
+<header class="main-header">
+
+<div class="container">
+
+<div class="logo-section">
+
+<div class="logo-box">
+IJ
+</div>
+
+<div class="journal-title">
+
+<h1>IJEIRD</h1>
+
+<p>
+International Journal of Engineering Innovation, Research and Development
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<ul class="menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li class="dropdown">
+
+<a href="#">About</a>
+
+<ul class="submenu">
+
+<li><a href="about.html">About the Journal</a></li>
+
+<li><a href="call-for-paper.html">Call for Paper</a></li>
+
+<li><a href="author-guidelines.html">Author Guidelines</a></li>
+
+<li><a href="publication-ethics.html">Publication Ethics</a></li>
+
+<li><a href="privacy-policy.html">Privacy Statement</a></li>
+
+<li><a href="copyright.html">Copyright & Licensing</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</li>
+
+<li><a href="apc.html">APC</a></li>
+
+<li><a href="indexing.html">Indexing</a></li>
+
+</ul>
+
+</nav>
+
+<!-- PAGE HEADER -->
+
+<section class="page-banner">
+
+<h1>
+About the Journal
+</h1>
+
+<p>
+International Journal of Engineering Innovation, Research and Development
+</p>
+
+</section>
+
+<!-- MAIN CONTENT -->
+
+<section class="main-content">
+
+<div class="container">
+
+<div class="content-box">
+
+<h2>
+About IJEIRD
+</h2>
+
+<p>
+The International Journal of Engineering Innovation, Research and Development (IJEIRD) is an international Open Access and Double-Blind Peer-Reviewed scholarly journal dedicated to publishing high-quality research articles, review papers, technical reports, and interdisciplinary studies in engineering, technology, and scientific innovation.
+</p>
+
+<p>
+The journal aims to provide a global platform for academicians, researchers, scientists, engineers, industry professionals, and scholars to exchange innovative ideas, recent advancements, practical developments, and research findings across multiple engineering and technological disciplines.
+</p>
+
+<p>
+IJEIRD encourages original research contributions in various areas including Computer Science Engineering, Artificial Intelligence, Mechanical Engineering, Civil Engineering, Electrical Engineering, Electronics and Communication Engineering, Information Technology, Renewable Energy, Robotics, Environmental Engineering, Data Science, and other emerging interdisciplinary domains.
+</p>
+
+<p>
+The journal follows a rigorous Double-Blind Peer-Review process to ensure originality, research quality, academic integrity, and scientific significance. All accepted articles are published under an Open Access model to provide free and unrestricted access to scholarly knowledge worldwide.
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>
+Open Access
+</h3>
+
+<p>
+All published articles are freely available online without subscription charges.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Peer Review
+</h3>
+
+<p>
+Every manuscript undergoes a rigorous Double-Blind Peer-Review process.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>
+Publication Frequency
+</h3>
+
+<p>
+The journal publishes two issues annually under the Biannual publication model.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 International Journal of Engineering Innovation, Research and Development (IJEIRD)
+</p>
+
+<br>
+
+<p>
+Powered by Open Journal Systems (OJS)
+</p>
+
+</footer>
+
+</body>
+</html>
+```
