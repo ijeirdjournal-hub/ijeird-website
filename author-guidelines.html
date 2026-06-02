@@ -4,80 +4,354 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Author Guidelines | IJEIRD</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f4fff6;color:#222;line-height:1.7}
-.container{width:90%;margin:auto}
-.top-header{background:#0b7a3d;color:#fff;padding:12px 0;font-size:14px}
-.top-flex{display:flex;justify-content:space-between;flex-wrap:wrap}
-.main-header{background:#fff;padding:25px 0}
-.logo-section{display:flex;align-items:center;gap:20px}
-.logo-box{width:70px;height:70px;border-radius:50%;background:#0b7a3d;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:bold}
-.journal-title h1{color:#0b7a3d}
-nav{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-.menu{display:flex;justify-content:center;list-style:none;flex-wrap:wrap}
-.menu a{text-decoration:none;color:#0b7a3d;padding:18px;display:block;font-weight:bold}
-.page-banner{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');background-size:cover;color:#fff;text-align:center;padding:90px 20px}
-.content-box{background:#fff;padding:40px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.08);margin:50px 0}
-h2{color:#0b7a3d;margin:25px 0 15px}
-.highlight-box{background:#eefdf2;border-left:5px solid #0b7a3d;padding:20px;margin:20px 0}
-.cards,.area-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:20px}
-.card,.area-card{background:#f8fff9;padding:18px;border-left:4px solid #0b7a3d;border-radius:6px}
-.submit-btn{display:inline-block;margin-top:20px;background:#0b7a3d;color:#fff;text-decoration:none;padding:12px 24px;border-radius:5px}
-footer{background:#0b7a3d;color:#fff;text-align:center;padding:30px;margin-top:40px}
-ul{margin-left:25px}
-li{margin-bottom:8px}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4fff6;
+    color:#222;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.top-header{
+    background:#0b7a3d;
+    color:#fff;
+    padding:12px 0;
+    font-size:14px;
+}
+
+.top-flex{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.main-header{
+    background:#fff;
+    padding:25px 0;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.logo-box{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:#0b7a3d;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.journal-title h1{
+    color:#0b7a3d;
+}
+
+.journal-title p{
+    color:#666;
+    margin-top:5px;
+}
+
+/* =========================
+NAVIGATION
+========================= */
+
+nav{
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+.menu li a{
+    text-decoration:none;
+    color:#0b7a3d;
+    padding:18px 22px;
+    display:block;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.menu li a:hover{
+    background:#eefdf2;
+    color:#055a2b;
+}
+
+/* =========================
+PAGE BANNER
+========================= */
+
+.page-banner{
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
+
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.page-banner h1{
+    font-size:42px;
+}
+
+.page-banner p{
+    margin-top:10px;
+}
+
+/* =========================
+CONTENT
+========================= */
+
+.content-box{
+    background:#fff;
+    padding:40px;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,.08);
+    margin:50px 0;
+}
+
+h2{
+    color:#0b7a3d;
+    margin:25px 0 15px;
+}
+
+.highlight-box{
+    background:#eefdf2;
+    border-left:5px solid #0b7a3d;
+    padding:20px;
+    margin:20px 0;
+}
+
+.cards,
+.area-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.card,
+.area-card{
+    background:#f8fff9;
+    padding:18px;
+    border-left:4px solid #0b7a3d;
+    border-radius:6px;
+}
+
+.submit-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#0b7a3d;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#055a2b;
+}
+
+ul{
+    margin-left:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+    background:#0b7a3d;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.menu{
+    flex-direction:column;
+}
+
+}
+
+@media(max-width:768px){
+
+.page-banner h1{
+    font-size:32px;
+}
+
+.top-flex{
+    flex-direction:column;
+    gap:8px;
+}
+
+.content-box{
+    padding:25px;
+}
+
+}
+
 </style>
+
 </head>
+
 <body>
 
+<!-- TOP HEADER -->
+
 <div class="top-header">
+
 <div class="container top-flex">
-<div>Open Access | Double-Blind Peer-Reviewed | Biannual Journal</div>
-<div>Email: editorial@ijeird.org</div>
+
+<div>
+Open Access | Double-Blind Peer-Reviewed | Biannual Journal
 </div>
+
+<div>
+Email: editorial@ijeird.org
 </div>
+
+</div>
+
+</div>
+
+<!-- HEADER -->
 
 <header class="main-header">
+
 <div class="container">
+
 <div class="logo-section">
-<div class="logo-box">IJ</div>
+
+<div class="logo-box">
+IJ
+</div>
+
 <div class="journal-title">
+
 <h1>IJEIRD</h1>
-<p>International Journal of Engineering Innovation, Research and Development</p>
+
+<p>
+International Journal of Engineering Innovation, Research and Development
+</p>
+
 </div>
+
 </div>
+
 </div>
+
 </header>
 
+<!-- NAVIGATION -->
+
 <nav>
+
 <ul class="menu">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="author-guidelines.html">Author Guidelines</a></li>
-<li><a href="submission.html">Submission</a></li>
-<li><a href="archives.html">Archives</a></li>
-<li><a href="contact.html">Contact</a></li>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About the Journal</a>
+</li>
+
+<li>
+<a href="call-for-paper.html">Call for Papers</a>
+</li>
+
+<li>
+<a href="author-guidelines.html">Author Guidelines</a>
+</li>
+
+<li>
+<a href="publication-ethics.html">Publication Ethics</a>
+</li>
+
 </ul>
+
 </nav>
 
+<!-- PAGE BANNER -->
+
 <section class="page-banner">
-<h1>Author Guidelines</h1>
-<p>Instructions for Preparing and Submitting Manuscripts</p>
+
+<h1>
+Author Guidelines
+</h1>
+
+<p>
+Instructions for Preparing and Submitting Manuscripts
+</p>
+
 </section>
 
+<!-- CONTENT -->
+
 <section class="container">
+
 <div class="content-box">
 
 <h2>Author Guidelines</h2>
-<p>The International Journal of Engineering Innovation, Research and Development (IJEIRD) welcomes the submission of original, high-quality research papers, review articles, case studies, and technical reports related to engineering, technology, and interdisciplinary research domains.</p>
+
+<p>
+The International Journal of Engineering Innovation, Research and Development (IJEIRD) welcomes the submission of original, high-quality research papers, review articles, case studies, and technical reports related to engineering, technology, and interdisciplinary research domains.
+</p>
 
 <div class="highlight-box">
+
 <h3>Important Note</h3>
-<p>Authors are requested to carefully follow the journal guidelines before submitting manuscripts.</p>
+
+<p>
+Authors are requested to carefully follow the journal guidelines before submitting manuscripts.
+</p>
+
 </div>
 
 <h2>1. Manuscript Preparation</h2>
+
 <ul>
 <li>Title of the Paper</li>
 <li>Author Name(s) and Affiliation(s)</li>
@@ -94,27 +368,71 @@ li{margin-bottom:8px}
 </ul>
 
 <h2>2. Paper Formatting</h2>
+
 <div class="cards">
-<div class="card"><h3>Font Style</h3><p>Times New Roman</p></div>
-<div class="card"><h3>Title</h3><p>16 pt Bold</p></div>
-<div class="card"><h3>Headings</h3><p>14 pt Bold</p></div>
-<div class="card"><h3>Sub-headings</h3><p>12 pt Bold</p></div>
-<div class="card"><h3>Body Text</h3><p>12 pt</p></div>
-<div class="card"><h3>Line Spacing</h3><p>1.5</p></div>
-<div class="card"><h3>Page Size</h3><p>A4</p></div>
-<div class="card"><h3>Margins</h3><p>1 inch on all sides</p></div>
+
+<div class="card">
+<h3>Font Style</h3>
+<p>Times New Roman</p>
+</div>
+
+<div class="card">
+<h3>Title</h3>
+<p>16 pt Bold</p>
+</div>
+
+<div class="card">
+<h3>Headings</h3>
+<p>14 pt Bold</p>
+</div>
+
+<div class="card">
+<h3>Sub-headings</h3>
+<p>12 pt Bold</p>
+</div>
+
+<div class="card">
+<h3>Body Text</h3>
+<p>12 pt</p>
+</div>
+
+<div class="card">
+<h3>Line Spacing</h3>
+<p>1.5</p>
+</div>
+
+<div class="card">
+<h3>Page Size</h3>
+<p>A4</p>
+</div>
+
+<div class="card">
+<h3>Margins</h3>
+<p>1 inch on all sides</p>
+</div>
+
 </div>
 
 <h2>3. Abstract and Keywords</h2>
-<p>The abstract should summarize objectives, methodology, results and conclusions in 150–250 words. Authors should provide 4–6 keywords.</p>
+
+<p>
+The abstract should summarize objectives, methodology, results and conclusions in 150–250 words. Authors should provide 4–6 keywords.
+</p>
 
 <h2>4. References</h2>
-<p>Authors may follow IEEE, APA, or any standard referencing style consistently throughout the manuscript.</p>
+
+<p>
+Authors may follow IEEE, APA, or any standard referencing style consistently throughout the manuscript.
+</p>
 
 <h2>5. Originality and Plagiarism Policy</h2>
-<p>Submitted manuscripts must be original and free from plagiarism. Any unethical practices may result in rejection.</p>
+
+<p>
+Submitted manuscripts must be original and free from plagiarism. Any unethical practices may result in rejection.
+</p>
 
 <h2>6. Peer Review Process</h2>
+
 <ul>
 <li>Originality of Research</li>
 <li>Technical Quality</li>
@@ -124,6 +442,7 @@ li{margin-bottom:8px}
 </ul>
 
 <h2>7. Copyright and Publication Ethics</h2>
+
 <ul>
 <li>Manuscript must be original work.</li>
 <li>All authors must approve final submission.</li>
@@ -132,11 +451,19 @@ li{margin-bottom:8px}
 </ul>
 
 <h2>8. Submission Procedure</h2>
-<p>Authors can submit manuscripts through the journal submission system or official email.</p>
-<a class="submit-btn" href="submission.html">Submit Your Manuscript</a>
+
+<p>
+Authors can submit manuscripts through the journal submission system or official email.
+</p>
+
+<a class="submit-btn" href="submission.html">
+Submit Your Manuscript
+</a>
 
 <h2>9. Scope of the Journal</h2>
+
 <div class="area-grid">
+
 <div class="area-card">Computer Science Engineering</div>
 <div class="area-card">Artificial Intelligence & Machine Learning</div>
 <div class="area-card">Data Science & Big Data Analytics</div>
@@ -156,20 +483,39 @@ li{margin-bottom:8px}
 <div class="area-card">Green Technology & Sustainability</div>
 <div class="area-card">Materials Science & Nanotechnology</div>
 <div class="area-card">Industrial & Production Engineering</div>
+
 </div>
 
 <h2>10. Publication Frequency</h2>
-<p>The journal is published on a Biannual basis with two issues released every year.</p>
+
+<p>
+The journal is published on a Biannual basis with two issues released every year.
+</p>
 
 <h2>11. Contact Information</h2>
-<p>For manuscript submission, publication inquiries, or assistance, contact the editorial office through the details available on the journal website.</p>
+
+<p>
+For manuscript submission, publication inquiries, or assistance, contact the editorial office through the details available on the journal website.
+</p>
 
 </div>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
-<p>© 2026 International Journal of Engineering Innovation, Research and Development (IJEIRD)</p>
-<p>Powered by Open Journal Systems (OJS)</p>
+
+<p>
+© 2026 International Journal of Engineering Innovation, Research and Development (IJEIRD)
+</p>
+
+<br>
+
+<p>
+Powered by Open Journal Systems (OJS)
+</p>
+
 </footer>
 
 </body>
