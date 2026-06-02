@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>
-About the Journal | IJEIRD
-</title>
+<title>About the Journal | IJEIRD</title>
 
 <style>
-
-/* =========================
-GENERAL
-========================= */
-
 *{
     margin:0;
     padding:0;
@@ -34,10 +24,6 @@ body{
     margin:auto;
 }
 
-/* =========================
-TOP HEADER
-========================= */
-
 .top-header{
     background:#0b7a3d;
     color:white;
@@ -50,10 +36,6 @@ TOP HEADER
     justify-content:space-between;
     flex-wrap:wrap;
 }
-
-/* =========================
-HEADER
-========================= */
 
 .main-header{
     background:white;
@@ -89,10 +71,6 @@ HEADER
     margin-top:5px;
 }
 
-/* =========================
-NAVIGATION
-========================= */
-
 nav{
     background:white;
     box-shadow:0 2px 8px rgba(0,0,0,0.08);
@@ -108,13 +86,9 @@ nav{
     flex-wrap:wrap;
 }
 
-.menu li{
-    position:relative;
-}
-
 .menu li a{
     display:block;
-    padding:18px 18px;
+    padding:18px 22px;
     color:#0b7a3d;
     text-decoration:none;
     font-weight:bold;
@@ -126,54 +100,12 @@ nav{
     color:#055a2b;
 }
 
-/* =========================
-DROPDOWN
-========================= */
-
-.submenu{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    background:white;
-    min-width:280px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.12);
-    border-top:3px solid #0b7a3d;
-    z-index:999;
-}
-
-.submenu li{
-    width:100%;
-}
-
-.submenu li a{
-    padding:12px 18px;
-    color:#222;
-    font-size:14px;
-    border-bottom:1px solid #f0f0f0;
-}
-
-.submenu li a:hover{
-    background:#f4fff6;
-    color:#0b7a3d;
-}
-
-.dropdown:hover .submenu{
-    display:block;
-}
-
-/* =========================
-PAGE BANNER
-========================= */
-
 .page-banner{
     background:
     linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
     url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
-
     background-size:cover;
     background-position:center;
-
     color:white;
     text-align:center;
     padding:90px 20px;
@@ -187,10 +119,6 @@ PAGE BANNER
 .page-banner p{
     font-size:18px;
 }
-
-/* =========================
-CONTENT
-========================= */
 
 .main-content{
     padding:60px 0;
@@ -213,10 +141,6 @@ CONTENT
     text-align:justify;
 }
 
-/* =========================
-CARDS
-========================= */
-
 .cards{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -237,10 +161,6 @@ CARDS
     margin-bottom:15px;
 }
 
-/* =========================
-FOOTER
-========================= */
-
 footer{
     background:#0b7a3d;
     color:white;
@@ -249,328 +169,100 @@ footer{
     margin-top:50px;
 }
 
-/* =========================
-RESPONSIVE
-========================= */
-
 @media(max-width:992px){
-
 .menu{
     flex-direction:column;
 }
-
-.submenu{
-    position:relative;
-    width:100%;
-}
-
 }
 
 @media(max-width:768px){
-
 .page-banner h1{
     font-size:32px;
 }
-
 .top-flex{
     flex-direction:column;
     gap:8px;
 }
-
 }
-
 </style>
-
 </head>
 
 <body>
 
-<!-- TOP HEADER -->
-
 <div class="top-header">
-
 <div class="container top-flex">
-
-<div>
-Open Access | Double-Blind Peer-Reviewed | Biannual Journal
+<div>Open Access | Double-Blind Peer-Reviewed | Biannual Journal</div>
+<div>Email: editorial@ijeird.org</div>
 </div>
-
-<div>
-Email: editorial@ijeird.org
 </div>
-
-</div>
-
-</div>
-
-<!-- HEADER -->
 
 <header class="main-header">
-
 <div class="container">
-
 <div class="logo-section">
-
-<div class="logo-box">
-IJ
-</div>
-
+<div class="logo-box">IJ</div>
 <div class="journal-title">
-
 <h1>IJEIRD</h1>
-
-<p>
-International Journal of Engineering Innovation, Research and Development
-</p>
-
+<p>International Journal of Engineering Innovation, Research and Development</p>
 </div>
-
 </div>
-
 </div>
-
 </header>
 
-<!-- NAVIGATION -->
-
 <nav>
-
 <ul class="menu">
-
 <li><a href="index.html">Home</a></li>
-
-<!-- ABOUT -->
-
-<li class="dropdown">
-
-<a href="#">About</a>
-
-<ul class="submenu">
-
 <li><a href="about.html">About the Journal</a></li>
-
-<li><a href="call-for-paper.html">Call for Paper</a></li>
-
+<li><a href="call-for-paper.html">Call for Papers</a></li>
 <li><a href="author-guidelines.html">Author Guidelines</a></li>
-
 <li><a href="publication-ethics.html">Publication Ethics</a></li>
-
-<li><a href="privacy-policy.html">Privacy Statement</a></li>
-
-<li><a href="copyright.html">Copyright & Licensing</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
 </ul>
-
-</li>
-
-<!-- JOURNAL POLICY -->
-
-<li class="dropdown">
-
-<a href="#">Journal Policy</a>
-
-<ul class="submenu">
-
-<li><a href="review-policy.html">Review Policy</a></li>
-
-<li><a href="open-access-policy.html">Open Access Policy</a></li>
-
-<li><a href="archiving-policy.html">Archiving Policy</a></li>
-
-<li><a href="advertising-policy.html">Advertising Policy</a></li>
-
-<li><a href="refund-policy.html">Refund Policy</a></li>
-
-<li><a href="waiver-policy.html">Waiver Policy</a></li>
-
-<li><a href="retraction-policy.html">Retraction & Withdrawal Policy</a></li>
-
-</ul>
-
-</li>
-
-<!-- APA -->
-
-<li class="dropdown">
-
-<a href="#">APA Referencing</a>
-
-<ul class="submenu">
-
-<li><a href="apa-guide.html">APA Reference Guide</a></li>
-
-<li><a href="apa-format.html">APA Reference Format</a></li>
-
-</ul>
-
-</li>
-
-<!-- EDITORIAL -->
-
-<li class="dropdown">
-
-<a href="#">Editorial Team</a>
-
-<ul class="submenu">
-
-<li><a href="editorial-team.html">Editorial Team</a></li>
-
-<li><a href="join-editorial.html">Join the Editorial Team</a></li>
-
-</ul>
-
-</li>
-
-<!-- SUBMISSIONS -->
-
-<li class="dropdown">
-
-<a href="#">Submissions</a>
-
-<ul class="submenu">
-
-<li><a href="submission.html">Submissions</a></li>
-
-<li><a href="submission-guidelines.html">Submission Guidelines</a></li>
-
-<li><a href="template.html">Manuscript Template</a></li>
-
-</ul>
-
-</li>
-
-<!-- ISSUES -->
-
-<li class="dropdown">
-
-<a href="#">Issues</a>
-
-<ul class="submenu">
-
-<li><a href="current-issue.html">Current Issue</a></li>
-
-<li><a href="archives.html">Archives</a></li>
-
-</ul>
-
-</li>
-
-<!-- INDEXING -->
-
-<li><a href="indexing.html">Indexing</a></li>
-
-<!-- APC -->
-
-<li><a href="apc.html">APC</a></li>
-
-</ul>
-
 </nav>
 
-<!-- PAGE BANNER -->
-
 <section class="page-banner">
-
-<h1>
-About the Journal
-</h1>
-
-<p>
-International Journal of Engineering Innovation, Research and Development
-</p>
-
+<h1>About the Journal</h1>
+<p>International Journal of Engineering Innovation, Research and Development</p>
 </section>
 
-<!-- MAIN CONTENT -->
-
 <section class="main-content">
-
 <div class="container">
-
 <div class="content-box">
 
-<h2>
-About IJEIRD
-</h2>
+<h2>About IJEIRD</h2>
 
-<p>
-The International Journal of Engineering Innovation, Research and Development (IJEIRD) is an international Open Access and Double-Blind Peer-Reviewed scholarly journal dedicated to publishing high-quality research articles, review papers, technical reports, and interdisciplinary studies in engineering, technology, and scientific innovation.
-</p>
+<p>The International Journal of Engineering Innovation, Research and Development (IJEIRD) is an international Open Access and Double-Blind Peer-Reviewed scholarly journal dedicated to publishing high-quality research articles, review papers, technical reports, and interdisciplinary studies in engineering, technology, and scientific innovation.</p>
 
-<p>
-The journal aims to provide a global platform for academicians, researchers, scientists, engineers, industry professionals, and scholars to exchange innovative ideas, recent advancements, practical developments, and research findings across multiple engineering and technological disciplines.
-</p>
+<p>The journal aims to provide a global platform for academicians, researchers, scientists, engineers, industry professionals, and scholars to exchange innovative ideas, recent advancements, practical developments, and research findings across multiple engineering and technological disciplines.</p>
 
-<p>
-IJEIRD encourages original research contributions in various areas including Computer Science Engineering, Artificial Intelligence, Mechanical Engineering, Civil Engineering, Electrical Engineering, Electronics and Communication Engineering, Information Technology, Renewable Energy, Robotics, Environmental Engineering, Data Science, and other emerging interdisciplinary domains.
-</p>
+<p>IJEIRD encourages original research contributions in various areas including Computer Science Engineering, Artificial Intelligence, Mechanical Engineering, Civil Engineering, Electrical Engineering, Electronics and Communication Engineering, Information Technology, Renewable Energy, Robotics, Environmental Engineering, Data Science, and other emerging interdisciplinary domains.</p>
 
-<p>
-The journal follows a rigorous Double-Blind Peer-Review process to ensure originality, research quality, academic integrity, and scientific significance. All accepted articles are published under an Open Access model to provide free and unrestricted access to scholarly knowledge worldwide.
-</p>
+<p>The journal follows a rigorous Double-Blind Peer-Review process to ensure originality, research quality, academic integrity, and scientific significance. All accepted articles are published under an Open Access model to provide free and unrestricted access to scholarly knowledge worldwide.</p>
 
 <div class="cards">
 
 <div class="card">
-
-<h3>
-Open Access
-</h3>
-
-<p>
-All published articles are freely accessible worldwide without subscription charges.
-</p>
-
+<h3>Open Access</h3>
+<p>All published articles are freely accessible worldwide without subscription charges.</p>
 </div>
 
 <div class="card">
-
-<h3>
-Peer Review
-</h3>
-
-<p>
-Every manuscript undergoes a rigorous Double-Blind Peer-Review process.
-</p>
-
+<h3>Peer Review</h3>
+<p>Every manuscript undergoes a rigorous Double-Blind Peer-Review process.</p>
 </div>
 
 <div class="card">
-
-<h3>
-Publication Frequency
-</h3>
-
-<p>
-The journal publishes two issues annually under the Biannual publication model.
-</p>
-
+<h3>Publication Frequency</h3>
+<p>The journal publishes two issues annually under the Biannual publication model.</p>
 </div>
 
 </div>
-
 </div>
-
 </div>
-
 </section>
 
-<!-- FOOTER -->
-
 <footer>
-
-<p>
-© 2026 International Journal of Engineering Innovation, Research and Development (IJEIRD)
-</p>
-
+<p>© 2026 International Journal of Engineering Innovation, Research and Development (IJEIRD)</p>
 <br>
-
-<p>
-Powered by Open Journal Systems (OJS)
-</p>
-
+<p>Powered by Open Journal Systems (OJS)</p>
 </footer>
 
 </body>
