@@ -1,694 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>
-Call for Papers | IJEIRD
-</title>
-
+<title>Call for Papers | IJEIRD</title>
 <style>
-
-/* =========================
-GENERAL
-========================= */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-body{
-    background:#f4fff6;
-    color:#222;
-    line-height:1.7;
-}
-
-.container{
-    width:90%;
-    margin:auto;
-}
-
-/* =========================
-TOP HEADER
-========================= */
-
-.top-header{
-    background:#0b7a3d;
-    color:white;
-    padding:12px 0;
-    font-size:14px;
-}
-
-.top-flex{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-}
-
-/* =========================
-HEADER
-========================= */
-
-.main-header{
-    background:white;
-    padding:25px 0;
-}
-
-.logo-section{
-    display:flex;
-    align-items:center;
-    gap:20px;
-}
-
-.logo-box{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    background:#0b7a3d;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-    font-size:28px;
-    font-weight:bold;
-}
-
-.journal-title h1{
-    color:#0b7a3d;
-    font-size:32px;
-}
-
-.journal-title p{
-    color:#666;
-    margin-top:5px;
-}
-
-/* =========================
-NAVIGATION
-========================= */
-
-nav{
-    background:white;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
-
-.menu{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
-.menu li{
-    position:relative;
-}
-
-.menu li a{
-    display:block;
-    padding:18px 18px;
-    color:#0b7a3d;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-    font-size:14px;
-}
-
-.menu li a:hover{
-    background:#eefdf2;
-    color:#055a2b;
-}
-
-/* =========================
-DROPDOWN
-========================= */
-
-.submenu{
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    background:white;
-    min-width:280px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.12);
-    border-top:3px solid #0b7a3d;
-    z-index:999;
-}
-
-.submenu li{
-    width:100%;
-}
-
-.submenu li a{
-    padding:12px 18px;
-    color:#222;
-    font-size:14px;
-    border-bottom:1px solid #f0f0f0;
-}
-
-.submenu li a:hover{
-    background:#f4fff6;
-    color:#0b7a3d;
-}
-
-.dropdown:hover .submenu{
-    display:block;
-}
-
-/* =========================
-PAGE BANNER
-========================= */
-
-.page-banner{
-    background:
-    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
-    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');
-
-    background-size:cover;
-    background-position:center;
-
-    color:white;
-    text-align:center;
-    padding:90px 20px;
-}
-
-.page-banner h1{
-    font-size:42px;
-    margin-bottom:15px;
-}
-
-.page-banner p{
-    font-size:18px;
-}
-
-/* =========================
-MAIN CONTENT
-========================= */
-
-.main-content{
-    padding:60px 0;
-}
-
-.content-box{
-    background:white;
-    padding:40px;
-    border-radius:8px;
-    box-shadow:0 0 10px rgba(0,0,0,0.08);
-}
-
-.content-box h2{
-    color:#0b7a3d;
-    margin-bottom:20px;
-    margin-top:25px;
-    font-size:28px;
-}
-
-.content-box p{
-    margin-bottom:18px;
-    text-align:justify;
-    font-size:15px;
-    color:#333;
-}
-
-/* =========================
-HIGHLIGHT BOX
-========================= */
-
-.highlight-box{
-    background:#eefdf2;
-    border-left:5px solid #0b7a3d;
-    padding:25px;
-    margin:30px 0;
-    border-radius:6px;
-}
-
-.highlight-box h3{
-    color:#0b7a3d;
-    margin-bottom:15px;
-}
-
-/* =========================
-LISTS
-========================= */
-
-ul{
-    margin:15px 0 25px 25px;
-}
-
-ul li{
-    margin-bottom:10px;
-    font-size:15px;
-}
-
-/* =========================
-AREA GRID
-========================= */
-
-.area-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:15px;
-    margin-top:25px;
-}
-
-.area-card{
-    background:#f8fff9;
-    border-left:4px solid #0b7a3d;
-    padding:18px;
-    border-radius:6px;
-    box-shadow:0 0 6px rgba(0,0,0,0.05);
-    font-size:15px;
-}
-
-/* =========================
-CARDS
-========================= */
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-    margin-top:35px;
-}
-
-.card{
-    background:#ffffff;
-    padding:25px;
-    border-radius:8px;
-    border-top:5px solid #0b7a3d;
-    box-shadow:0 0 10px rgba(0,0,0,0.08);
-}
-
-.card h3{
-    color:#0b7a3d;
-    margin-bottom:15px;
-}
-
-/* =========================
-SUBMISSION BUTTON
-========================= */
-
-.submit-btn{
-    display:inline-block;
-    margin-top:25px;
-    background:#0b7a3d;
-    color:white;
-    text-decoration:none;
-    padding:14px 28px;
-    border-radius:5px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.submit-btn:hover{
-    background:#055a2b;
-}
-
-/* =========================
-FOOTER
-========================= */
-
-footer{
-    background:#0b7a3d;
-    color:white;
-    text-align:center;
-    padding:35px 10px;
-    margin-top:50px;
-}
-
-/* =========================
-RESPONSIVE
-========================= */
-
-@media(max-width:992px){
-
-.menu{
-    flex-direction:column;
-}
-
-.submenu{
-    position:relative;
-    width:100%;
-}
-
-}
-
-@media(max-width:768px){
-
-.page-banner h1{
-    font-size:32px;
-}
-
-.top-flex{
-    flex-direction:column;
-    gap:8px;
-}
-
-.content-box{
-    padding:25px;
-}
-
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f4fff6;color:#222;line-height:1.7;}
+.container{width:90%;margin:auto;}
+.top-header{background:#0b7a3d;color:#fff;padding:12px 0;font-size:14px;}
+.top-flex{display:flex;justify-content:space-between;flex-wrap:wrap;}
+.main-header{background:#fff;padding:25px 0;}
+.logo-section{display:flex;align-items:center;gap:20px;}
+.logo-box{width:70px;height:70px;border-radius:50%;background:#0b7a3d;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px;font-weight:bold;}
+.journal-title h1{color:#0b7a3d;font-size:32px;}
+.journal-title p{color:#666;margin-top:5px;}
+nav{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:1000;}
+.menu{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;}
+.menu li a{display:block;padding:18px 22px;color:#0b7a3d;text-decoration:none;font-weight:bold;font-size:14px;}
+.menu li a:hover{background:#eefdf2;color:#055a2b;}
+.page-banner{background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3');background-size:cover;background-position:center;color:#fff;text-align:center;padding:90px 20px;}
+.page-banner h1{font-size:42px;margin-bottom:15px;}
+.page-banner p{font-size:18px;}
+.main-content{padding:60px 0;}
+.content-box{background:#fff;padding:40px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.08);}
+.content-box h2{color:#0b7a3d;margin:25px 0 20px;font-size:28px;}
+.highlight-box{background:#eefdf2;border-left:5px solid #0b7a3d;padding:25px;margin:30px 0;border-radius:6px;}
+.area-grid,.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin-top:25px;}
+.area-card,.card{background:#f8fff9;padding:18px;border-radius:6px;box-shadow:0 0 6px rgba(0,0,0,.05);}
+.card{border-top:5px solid #0b7a3d;background:#fff;}
+.submit-btn{display:inline-block;margin-top:25px;background:#0b7a3d;color:#fff;text-decoration:none;padding:14px 28px;border-radius:5px;font-weight:bold;}
+footer{background:#0b7a3d;color:#fff;text-align:center;padding:35px 10px;margin-top:50px;}
+@media(max-width:992px){.menu{flex-direction:column;}}
 </style>
-
 </head>
-
 <body>
-
-<!-- TOP HEADER -->
-
-<div class="top-header">
-
-<div class="container top-flex">
-
-<div>
-Open Access | Double-Blind Peer-Reviewed | Biannual Journal
-</div>
-
-<div>
-Email: editorial@ijeird.org
-</div>
-
-</div>
-
-</div>
-
-<!-- HEADER -->
-
-<header class="main-header">
-
-<div class="container">
-
-<div class="logo-section">
-
-<div class="logo-box">
-IJ
-</div>
-
-<div class="journal-title">
-
-<h1>IJEIRD</h1>
-
-<p>
-International Journal of Engineering Innovation, Research and Development
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</header>
-
-<!-- NAVIGATION -->
+<div class="top-header"><div class="container top-flex"><div>Open Access | Double-Blind Peer-Reviewed | Biannual Journal</div><div>Email: editorial@ijeird.org</div></div></div>
+<header class="main-header"><div class="container"><div class="logo-section"><div class="logo-box">IJ</div><div class="journal-title"><h1>IJEIRD</h1><p>International Journal of Engineering Innovation, Research and Development</p></div></div></div></header>
 
 <nav>
-
 <ul class="menu">
-
 <li><a href="index.html">Home</a></li>
-
-<li class="dropdown">
-
-<a href="#">About</a>
-
-<ul class="submenu">
-
 <li><a href="about.html">About the Journal</a></li>
-
-<li><a href="call-for-paper.html">Call for Paper</a></li>
-
+<li><a href="call-for-paper.html">Call for Papers</a></li>
 <li><a href="author-guidelines.html">Author Guidelines</a></li>
-
 <li><a href="publication-ethics.html">Publication Ethics</a></li>
-
-<li><a href="privacy-policy.html">Privacy Statement</a></li>
-
-<li><a href="copyright.html">Copyright & Licensing</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
 </ul>
-
-</li>
-
-<li><a href="submission.html">Submission</a></li>
-
-<li><a href="current-issue.html">Current Issue</a></li>
-
-<li><a href="archives.html">Archives</a></li>
-
-<li><a href="indexing.html">Indexing</a></li>
-
-<li><a href="apc.html">APC</a></li>
-
-</ul>
-
 </nav>
 
-<!-- PAGE BANNER -->
-
 <section class="page-banner">
-
-<h1>
-Call for Papers
-</h1>
-
-<p>
-Submit Your Original Research to IJEIRD
-</p>
-
+<h1>Call for Papers</h1>
+<p>Submit Your Original Research to IJEIRD</p>
 </section>
-
-<!-- MAIN CONTENT -->
 
 <section class="main-content">
-
 <div class="container">
-
 <div class="content-box">
-
-<h2>
-Call for Papers
-</h2>
-
-<p>
-The International Journal of Engineering Innovation, Research and Development (IJEIRD) invites researchers, academicians, scientists, industry professionals, and scholars to submit original and high-quality research papers for publication in upcoming issues of the journal.
-</p>
-
-<p>
-IJEIRD is an Open Access, Double-Blind Peer-Reviewed international journal dedicated to publishing innovative research and advanced developments in the fields of engineering, technology, and interdisciplinary studies.
-</p>
-
-<p>
-The journal provides a global platform for researchers to share scientific knowledge, emerging technologies, practical applications, and innovative solutions that contribute to academic and industrial advancement.
-</p>
+<h2>Call for Papers</h2>
+<p>The International Journal of Engineering Innovation, Research and Development (IJEIRD) invites researchers, academicians, scientists, industry professionals, and scholars to submit original and high-quality research papers for publication in upcoming issues of the journal.</p>
+<p>IJEIRD is an Open Access, Double-Blind Peer-Reviewed international journal dedicated to publishing innovative research and advanced developments in engineering, technology, and interdisciplinary studies.</p>
 
 <div class="highlight-box">
-
-<h3>
-Types of Papers Accepted
-</h3>
-
+<h3>Types of Papers Accepted</h3>
 <ul>
-
 <li>Original Research Articles</li>
-
 <li>Review Papers</li>
-
 <li>Case Studies</li>
-
 <li>Technical Reports</li>
-
 <li>Short Communications</li>
-
 <li>Innovative Project-Based Studies</li>
-
 </ul>
-
 </div>
 
-<h2>
-Area of Publication
-</h2>
-
-<p>
-IJEIRD accepts papers from, but not limited to, the following domains:
-</p>
-
+<h2>Area of Publication</h2>
 <div class="area-grid">
-
 <div class="area-card">Computer Science Engineering</div>
-
 <div class="area-card">Artificial Intelligence & Machine Learning</div>
-
 <div class="area-card">Data Science & Big Data Analytics</div>
-
 <div class="area-card">Information Technology</div>
-
 <div class="area-card">Mechanical Engineering</div>
-
 <div class="area-card">Civil Engineering</div>
-
-<div class="area-card">Electrical & Electronics Engineering</div>
-
-<div class="area-card">Electronics & Communication Engineering</div>
-
-<div class="area-card">Robotics & Automation</div>
-
-<div class="area-card">Internet of Things (IoT)</div>
-
-<div class="area-card">Cyber Security</div>
-
-<div class="area-card">Renewable Energy & Environmental Engineering</div>
-
-<div class="area-card">Industrial Engineering</div>
-
-<div class="area-card">Biotechnology</div>
-
-<div class="area-card">Smart Technologies & Innovation</div>
-
-<div class="area-card">Interdisciplinary Engineering Research</div>
-
-<div class="area-card">Green Technology & Sustainability</div>
-
-<div class="area-card">Materials Science & Nanotechnology</div>
-
-<div class="area-card">Industrial & Production Engineering</div>
-
 </div>
 
-<h2>
-Why Publish with IJEIRD?
-</h2>
-
+<h2>Why Publish with IJEIRD?</h2>
 <div class="cards">
-
-<div class="card">
-
-<h3>
-Peer-Reviewed Journal
-</h3>
-
-<p>
-All manuscripts undergo a rigorous Double-Blind Peer-Review process.
-</p>
-
+<div class="card"><h3>Peer-Reviewed Journal</h3><p>Rigorous Double-Blind Peer Review.</p></div>
+<div class="card"><h3>Rapid Review</h3><p>Transparent and timely review process.</p></div>
+<div class="card"><h3>Global Visibility</h3><p>Open Access worldwide availability.</p></div>
 </div>
 
-<div class="card">
-
-<h3>
-Rapid Review
-</h3>
-
-<p>
-Transparent and timely review process for quality publication.
-</p>
-
+<a href="submission.html" class="submit-btn">Submit Your Manuscript</a>
 </div>
-
-<div class="card">
-
-<h3>
-Global Visibility
-</h3>
-
-<p>
-Published papers are accessible worldwide under Open Access policy.
-</p>
-
 </div>
-
-<div class="card">
-
-<h3>
-Multidisciplinary Scope
-</h3>
-
-<p>
-Wide engineering and interdisciplinary research coverage.
-</p>
-
-</div>
-
-</div>
-
-<h2>
-Submission Guidelines
-</h2>
-
-<p>
-Authors are requested to submit original manuscripts that have not been published or submitted elsewhere for publication.
-</p>
-
-<p>
-The manuscript should follow the journal formatting guidelines and include proper references, figures, tables, and author details. Papers must be written in clear and concise English.
-</p>
-
-<a href="submission.html" class="submit-btn">
-Submit Your Manuscript
-</a>
-
-<h2>
-Publication Frequency
-</h2>
-
-<p>
-IJEIRD is a Biannual journal and publishes two issues per year. The journal is committed to maintaining a timely publication schedule while ensuring high standards of peer review and academic quality.
-</p>
-
-<p>
-Each issue features original research articles, review papers, and innovative studies from various engineering and interdisciplinary domains contributed by researchers and professionals from around the world.
-</p>
-
-<h2>
-Invitation to Researchers
-</h2>
-
-<p>
-IJEIRD encourages innovative and impactful research contributions that address modern engineering challenges and technological developments.
-</p>
-
-<p>
-We welcome submissions from universities, research institutions, industries, and independent researchers from across the globe.
-</p>
-
-<p>
-Researchers interested in publishing their work are invited to submit their manuscripts through the journal submission system or contact the editorial office for further details regarding publication and review procedures.
-</p>
-
-</div>
-
-</div>
-
 </section>
 
-<!-- FOOTER -->
-
 <footer>
-
-<p>
-© 2026 International Journal of Engineering Innovation, Research and Development (IJEIRD)
-</p>
-
+<p>© 2026 International Journal of Engineering Innovation, Research and Development (IJEIRD)</p>
 <br>
-
-<p>
-Powered by Open Journal Systems (OJS)
-</p>
-
+<p>Powered by Open Journal Systems (OJS)</p>
 </footer>
-
 </body>
 </html>
